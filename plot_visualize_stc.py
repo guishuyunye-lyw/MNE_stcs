@@ -14,13 +14,14 @@ Surface Source Estimates
 First, we get the paths for the evoked data and the time courses (stcs).
 """
 
+#%%
 import os
 
 import mne
 from mne.datasets import sample
 from mne.minimum_norm import apply_inverse, read_inverse_operator
 from mne import read_evokeds
-
+#%%
 data_path = sample.data_path()
 sample_dir = os.path.join(data_path, 'MEG', 'sample')
 subjects_dir = os.path.join(data_path, 'subjects')
